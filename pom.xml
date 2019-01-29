@@ -4,13 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>apple.pangzi</groupId>
-	<artifactId>java-base</artifactId>
+	<artifactId>javabase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+	<modules>
+		<module>jdbc</module>
+		<module>common</module>
+	</modules>
+
 	<packaging>pom</packaging>
 
-	<name>java-base</name>
-	<description>java-base</description>
+	<name>javabase</name>
+	<description>javabase</description>
 
 	
 
