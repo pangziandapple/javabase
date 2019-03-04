@@ -9,7 +9,9 @@
 	<modules>
 		<module>jdbc</module>
 		<module>common</module>
-	</modules>
+        <module>test</module>
+        <module>lock</module>
+    </modules>
 
 	<packaging>pom</packaging>
 
