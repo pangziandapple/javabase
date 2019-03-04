@@ -20,9 +20,20 @@ public class JdbcUtils {
 
 
     public static Connection getConnection(String dirver, String dbUrl, String userName, String passwd) throws SQLException, ClassNotFoundException {
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName(JDBC_DRIVER);
         Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
         return conn;
     }
 
+    public boolean closeConnection(Connection connection){
+        if(connection != null){
+            try {
+                connection.close();
+                return true;
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
+    }
 }
