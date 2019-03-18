@@ -102,7 +102,6 @@ public class JdbcApplication {
         Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
         Statement stmt = conn.createStatement();
 
-
         String sql = "SELECT id, name, age FROM user limit 0,10";
         ResultSet rs = stmt.executeQuery(sql);
 
